@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <title>Pencarian</title>
+
+    <!-- Bootstrap -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="font-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="css/cari.css">
+    <link rel="stylesheet" type="text/css" href="css/animate.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <link rel="shortcut icon" href="img/fav-icon.png" type="image/png" />
+  </head>
+  <body>
+
+	<div class="kepala" style="background: #fff;">
+		<div style="margin-top: 5px; margin-bottom: 5px; margin-left: 105px;"><span style="font-size: 25px;">Nomaden<span style="color: #ff3d00">.com</span></span></div>
+		<div><img src="img/notification.png" width="25" height="25" style="margin-top: 12px; margin-left: 865px;"><span style="margin-top: 300spx;"></span></div>
+		<div><img src="img/man.png" width="45" height="45" style="margin-top: 1px; margin-right: 105px;"></div>
+	</div>   
+    <div class="hasil_cari">
+    	<div style="padding-top: 40px;">
+    	<div class="row" style="margin-left: 90px;">
+		  <div class="col-lg-6">
+		    <div class="input-group">
+		      <input type="text" class="form-control" placeholder="Yogyakarta...">
+		      <span class="input-group-btn">
+		        <button class="btn btn-default" type="button"><i class="fa fa-search" aria-hidden="true"></i></button>
+		      </span>
+		    </div><!-- /input-group -->
+		  </div><!-- /.col-lg-6 -->
+		</div><!-- /.row -->
+		<div style="margin-top: 10px;">
+    		<span style="margin-left: 105px; color: #fff; font-size: 30px;">Search results for <b><span style="color: #ff3d00;">Yogyakarta</span></b></span>
+    	</div>
+    	</div>
+    </div>
+    <div class="pengaturan">
+    <div style="padding-top: 30px; padding-left: 105px;">
+    	<table>
+    		<tr>
+    			<td>
+    				<div class="dropdown" style="padding-right: 15px;">
+					  <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+					    Masa Sewa
+					    <span class="caret"></span>
+					  </button>
+					  <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
+					    <li><a href="#">30 Hari</a></li>
+					    <li><a href="#">3 Bulan</a></li>
+					    <li><a href="#">6 Bulan</a></li>
+					    <li><a href="#">1 Tahun</a></li>
+					  </ul>
+					</div>
+    			</td>
+    			<td>
+    				<div class="dropdown" style="padding-right: 15px;">
+					  <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+					    Jenis Kelamin
+					    <span class="caret"></span>
+					  </button>
+					  <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
+					    <li><a href="#">Khusus Laki-laki</a></li>
+					    <li><a href="#">Khusus Perempuan</a></li>
+					    <li><a href="#">Campur</a></li>
+					  </ul>
+					</div>
+    			</td>
+    			<td>
+    				<div class="dropdown" style="padding-right: 15px;">
+					  <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+					    Fasilitas
+					    <span class="caret"></span>
+					  </button>
+					  <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
+					    <li><a href="#">AC</a></li>
+					    <li><a href="#">Internet</a></li>
+					    <li><a href="#">Kosongan</a></li>
+					    <li><a href="#">Lengkap</a></li>
+					  </ul>
+					</div>
+    			</td>
+    			<td>
+    				<div class="dropdown" style="padding-right: 15px;">
+					  <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+					    Harga
+					    <span class="caret"></span>
+					  </button>
+					  <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
+					    <li><a href="#">Diatas 5jt</a></li>
+					    <li><a href="#">Dibawah 2jt</a></li>
+					    <li><a href="#">Diatas 2jt</a></li>
+					    <li><a href="#">Diatas 5jt</a></li>
+					  </ul>
+					</div>
+    			</td>
+    			<td>
+    				<div style="padding-left: 490px;">Urutkan :</div>
+    			</td>
+    			<td>
+    				<div class="dropdown" style="padding-left: 5px;">
+					  <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+					    Paling Sesuai
+					    <span class="caret"></span>
+					  </button>
+					  <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
+					    <li><a href="#">Ulasan</a></li>
+					    <li><a href="./rating-bintang.html">Bintang</a></li>
+					    <li><a href="#">Termurah</a></li>
+					    <li><a href="#">Termahal</a></li>
+					  </ul>
+					</div>
+    			</td>
+    		</tr>
+    	</table>
+    </div>
+
+    <div class="pembatas" style="margin-left: 105px;"></div>
+
+    <div style="margin-left: 105px; margin-top: 35px;">
+    	<table style="width: 1140px; height: 140px;">
+			<tbody>
+			<tr>
+			<td style="width: 250px;" colspan="2" rowspan="4"><img src="img/kamar1.png" width="250"></td>
+			<td style="width: 899px;"><span style="padding-left: 25px; font-weight: bold; font-size: 20px;">Kost Wisma Adji Type B Yogyakarta</span></td>
+			</tr>
+			<tr>
+			<td style="width: 899px;"><span style="padding-left: 25px;"><i class="fa fa-user-circle" aria-hidden="true"></i> Adji Sukala
+			 <span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span></td>
+			</tr>
+			<tr>
+			<td style="width: 899px;"><span style="padding-left: 25px;">Kostnya terkesan rindang di dalam luas dan banyak kamar penghuni kos.</span></td>
+			</tr>
+			<tr>
+			<td style="width: 899px;"><span style="padding-left: 25px;"><i class="fa fa-motorcycle" aria-hidden="true"></i> Parkrir motor, <i class="fa fa-bed" aria-hidden="true"></i> Kasur, <i class="fa fa-wifi" aria-hidden="true"></i> Wifi-Internet</span>
+			<div style="text-align: left; padding-left: 25px; padding-top: 20px;">
+			<button type="button" class="btn btn-warning">Sewa</button> <button type="button" class="btn btn-info"><a href="./detail_kos.html">Info</a></button>
+			</div>
+			</td>
+			</tr>
+			</tbody>
+		</table>
+    </div>
+
+    <div style="margin-left: 105px; margin-top: 35px;">
+    	<table style="width: 1140px; height: 140px;">
+			<tbody>
+			<tr>
+			<td style="width: 250px;" colspan="2" rowspan="4"><img src="img/kamar2.jpg" width="250"></td>
+			<td style="width: 899px;"><span style="padding-left: 25px; font-weight: bold; font-size: 20px;">Kost G-Hans Wahid Hasyim Yogyakarta</span></td>
+			</tr>
+			<tr>
+			<td style="width: 899px;"><span style="padding-left: 25px;"><i class="fa fa-user-circle" aria-hidden="true"></i> Karto Tuying
+			 <span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span></td>
+			</tr>
+			<tr>
+			<td style="width: 899px;"><span style="padding-left: 25px;">Jam kunjung tamu maksimal 22.00. Sudah termasuk listrik.</span></td>
+			</tr>
+			<tr>
+			<td style="width: 899px;"><span style="padding-left: 25px;"><i class="fa fa-motorcycle" aria-hidden="true"></i> Parkrir motor, <i class="fa fa-bed" aria-hidden="true"></i> Kasur, <i class="fa fa-wifi" aria-hidden="true"></i> Wifi-Internet</span>
+			<div style="text-align: left; padding-left: 25px; padding-top: 20px;">
+			<button type="button" class="btn btn-warning">Sewa</button> <button type="button" class="btn btn-info">Info</button>
+			</div>
+			</td>
+			</tr>
+			</tbody>
+		</table>
+    </div>
+
+    <div style="margin-left: 105px; margin-top: 35px;">
+    	<table style="width: 1140px; height: 140px;">
+			<tbody>
+			<tr>
+			<td style="width: 250px;" colspan="2" rowspan="4"><img src="img/kamar3.jpg" width="250"></td>
+			<td style="width: 899px;"><span style="padding-left: 25px; font-weight: bold; font-size: 20px;">Kost Aditara Residence Catur Tunggal Yogyakarta</span></td>
+			</tr>
+			<tr>
+			<td style="width: 899px;"><span style="padding-left: 25px;"><i class="fa fa-user-circle" aria-hidden="true"></i> Supriman Saya <span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span>
+			</span></td>
+			</tr>
+			<tr>
+			<td style="width: 899px;"><span style="padding-left: 25px;">Free galon 2 buah, TV kabel, Free laundry 20 Kg, Cleaning Room Service</span></td>
+			</tr>
+			<tr>
+			<td style="width: 899px;"><span style="padding-left: 25px;"><i class="fa fa-motorcycle" aria-hidden="true"></i> Parkrir motor, <i class="fa fa-bed" aria-hidden="true"></i> Kasur, <i class="fa fa-wifi" aria-hidden="true"></i> Wifi-Internet</span>
+			<div style="text-align: left; padding-left: 25px; padding-top: 20px;">
+			<button type="button" class="btn btn-warning">Sewa</button> <button type="button" class="btn btn-info">Info</button>
+			</div>
+			</td>
+			</tr>
+			</tbody>
+		</table>
+    </div>
+
+    <div style="margin-left: 105px; margin-top: 35px;">
+    	<table style="width: 1140px; height: 140px;">
+			<tbody>
+			<tr>
+			<td style="width: 250px;" colspan="2" rowspan="4"><img src="img/kamar3.png" width="250"></td>
+			<td style="width: 899px;"><span style="padding-left: 25px; font-weight: bold; font-size: 20px;">Kost D'Kusuma Maguwoharjo Yogyakarta</span></td>
+			</tr>
+			<tr>
+			<td style="width: 899px;"><span style="padding-left: 25px;"><i class="fa fa-user-circle" aria-hidden="true"></i> Mbak Ruroh
+			 <span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span></td>
+			</tr>
+			<tr>
+			<td style="width: 899px;"><span style="padding-left: 25px;">Cleaning Room Service, Free laundry.</span></td>
+			</tr>
+			<tr>
+			<td style="width: 899px;"><span style="padding-left: 25px;"><i class="fa fa-motorcycle" aria-hidden="true"></i> Parkrir motor, <i class="fa fa-bed" aria-hidden="true"></i> Kasur, <i class="fa fa-wifi" aria-hidden="true"></i> Wifi-Internet</span>
+			<div style="text-align: left; padding-left: 25px; padding-top: 20px;">
+			<button type="button" class="btn btn-warning">Sewa</button> <button type="button" class="btn btn-info">Info</button>
+			</div>
+			</td>
+			</tr>
+			</tbody>
+		</table>
+    </div>
+
+    <div style="margin-left: 105px; margin-top: 35px;">
+    	<table style="width: 1140px; height: 140px;">
+			<tbody>
+			<tr>
+			<td style="width: 250px;" colspan="2" rowspan="4"><img src="img/kamar5.png" width="250"></td>
+			<td style="width: 899px;"><span style="padding-left: 25px; font-weight: bold; font-size: 20px;">Kost Pesona Jogja Tipe B Umbulharjo Yogyakarta </span></td>
+			</tr>
+			<tr>
+			<td style="width: 899px;"><span style="padding-left: 25px;"><i class="fa fa-user-circle" aria-hidden="true"></i> Mang Awung
+			 <span class="glyphicon glyphicon-star" aria-hidden="true"></span></span></td>
+			</tr>
+			<tr>
+			<td style="width: 899px;"><span style="padding-left: 25px;">Ada cleaning room jika mau.</span></td>
+			</tr>
+			<tr>
+			<td style="width: 899px;"><span style="padding-left: 25px;"><i class="fa fa-motorcycle" aria-hidden="true"></i> Parkrir motor, <i class="fa fa-bed" aria-hidden="true"></i> Kasur, <i class="fa fa-wifi" aria-hidden="true"></i> Wifi-Internet</span>
+			<div style="text-align: left; padding-left: 25px; padding-top: 20px;">
+			<button type="button" class="btn btn-warning">Sewa</button> <button type="button" class="btn btn-info">Info</button>
+			</div>
+			</td>
+			</tr>
+			</tbody>
+		</table>
+    </div>
+
+    <nav aria-label="..." style="margin-left: 105px;">
+	  <ul class="pagination">
+	    <li class="page-item disabled">
+	      <a class="page-link" href="#" tabindex="-1">Previous</a>
+	    </li>
+	    <li class="page-item active">
+	    <a class="page-link" href="#">1 </a></li>
+	    <li class="page-item">
+	      <a class="page-link" href="./halaman2.html">2 </a>
+	    </li>
+	    <li class="page-item">
+	    <a class="page-link" href="#">3 </a></li>
+	    <li class="page-item">
+	    <a class="page-link" href="#">4 </a></li>
+	    <li class="page-item">
+	    <a class="page-link" href="#">5 </a></li>
+	    <li class="page-item"><a class="page-link" href="#">6</a></li>
+	    <li class="page-item">
+	      <a class="page-link" href="#">Next</a>
+	    </li>
+	  </ul>
+	</nav>
+
+    <div id="footer" style="padding-top: 15px;">
+      <ul>
+        <li>About Us</li>
+        <li>Nomaden for Business</li>
+        <li>Become an Investor</li>
+        <li>Affiliates</li>
+        <li>Blog</li>
+        <li>Topics</li>
+        <li>Mobile Apps</li>
+        <li>Careers</li>
+        <li>Resources</li>
+      </ul>
+      <ul>
+        <li>Copyright &copy; 2017 Nomaden, Inc.</li>
+        <li>Term Of Services</li>
+        <li>Privacy Policy</li>
+        <li>Intellectual Property</li>
+      </ul>
+      <ul>
+        <li>English</li>
+        <li>Deutsch</li>
+        <li><b>Bahasa Indonesia</b></li>
+        <li>Espanol</li>
+        <li>Portugues</li>
+        <li>Francais</li>
+      </ul>
+    </div>
+    
+    <a href="javascript:" id="return-to-top"><i class="fa fa-chevron-up" aria-hidden="true"></i></a>
+ 
+    <!-- WOW JS -->
+    <script src="WOW-master/dist/wow.min.js"></script>
+              <script>
+              new WOW().init();
+              </script>
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="js/bootstrap.min.js"></script>
+  </body>
+</html>
